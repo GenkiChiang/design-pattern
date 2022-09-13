@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+Observer <-- Subject: subject
+
+class Observer {
+    update()
+}
+
+class Subject {
+    observerList Observer[]
+
+    attach()
+    detach()
+    notify()
+}
+@enduml
